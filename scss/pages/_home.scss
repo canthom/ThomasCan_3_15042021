@@ -2,14 +2,25 @@
 
 // Main Header
 .main-header {
-  &__search {
-  }
+  background-color: $color-grey-light;
+  padding: 7.5rem 3.5rem;
 
   &__reservation {
     height: 15rem;
+    text-align: center;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    color: $color-grey-dark;
+    margin-bottom: 3rem;
   }
 }
