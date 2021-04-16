@@ -1,0 +1,15 @@
+// Landing Page
+
+// Main Header
+.main-header {
+  &__search {
+  }
+
+  &__reservation {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

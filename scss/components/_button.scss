@@ -1,0 +1,21 @@
+// Button
+
+.btn {
+  background: linear-gradient(
+    to right bottom,
+    $color-secondary,
+    $color-primary
+  );
+  color: $color-white;
+
+  border: none;
+  border-radius: 10rem;
+
+  font-family: $text-font;
+  font-size: 1.7rem;
+  font-weight: 700;
+
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  display: inline-block;
+}

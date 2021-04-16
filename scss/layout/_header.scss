@@ -1,0 +1,11 @@
+.header {
+  height: 7rem;
+
+  box-shadow: 0px 2px 5px 0px rgba($color-black, 0.35);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba($color-black, 0.35);
+  -moz-box-shadow: 0px 2px 5px 0px rgba($color-black, 0.35);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
