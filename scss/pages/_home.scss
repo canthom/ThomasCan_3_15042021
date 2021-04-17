@@ -24,3 +24,23 @@
     margin-bottom: 3rem;
   }
 }
+
+.restoration {
+  background-color: $color-grey-light;
+  padding: 5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 2rem 0;
+  }
+
+  &__card {
+    height: 240px;
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+}

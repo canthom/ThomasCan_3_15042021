@@ -9,8 +9,11 @@
 
   <!-- Links -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
 
   <link rel="stylesheet" href="./css/main.min.css">
 
@@ -19,9 +22,9 @@
 
 <body>
   <header class="header">
-    <div class="header__logo">
+    <a href="#" class="header__logo">
       <img src="./img/ohmyfood@2x.svg" alt="Logo d'Ohmyfood!">
-    </div>
+    </a>
   </header>
 
   <main class="main">
@@ -38,13 +41,71 @@
       </div>
     </header>
 
+    <section class="restoration">
+      <h2 class="restoration__title heading-2">Restaurants</h2>
+      <div class="restoration__card card">
+        <img src="./img/restaurants/palette.jpg" alt="La palette du goût" class="card__img">
+        <span class="card__new">Nouveau</span>
+        <div class="card__info">
+          <div class="card__text">
+            <h3 class="heading-3">La palette du goût</h3>
+            <p class="paragraph">Ménilmontant</p>
+          </div>
+          <svg class="card__like">
+            <use xlink:href="img/symbol-defs.svg#icon-heart-o"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="restoration__card card">
+        <img src="./img/restaurants/enchantee.jpg" alt="La note enchantée" class="card__img">
+        <span class="card__new">Nouveau</span>
+        <div class="card__info">
+          <div class="card__text">
+            <h3 class="heading-3">La note enchantée</h3>
+            <p class="paragraph">Charonne</p>
+          </div>
+          <svg class="card__like">
+            <use xlink:href="img/symbol-defs.svg#icon-heart-o"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="restoration__card card">
+        <img src="./img/restaurants/francaise.jpg" alt="À la française" class="card__img">
+        <div class="card__info">
+          <div class="card__text">
+            <h3 class="heading-3">À la française</h3>
+            <p class="paragraph">Cité Rouge</p>
+          </div>
+          <svg class="card__like">
+            <use xlink:href="img/symbol-defs.svg#icon-heart-o"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="restoration__card card">
+        <img src="./img/restaurants/délice.jpg" alt="Le délice des sens" class="card__img">
+        <div class="card__info">
+          <div class="card__text">
+            <h3 class="heading-3">Le délice des sens</h3>
+            <p class="paragraph">Folie-Méricourt</p>
+          </div>
+          <svg class="card__like">
+            <use xlink:href="img/symbol-defs.svg#icon-heart-o"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <span class="footer__logo">Ohmyfood</span>
+    <span class="footer__logo">ohmyfood</span>
     <ul class="footer__list">
-      <li class="footer__item"><a href="#" class="footer__link">Proposer un restaurant</a></li>
-      <li class="footer__item"><a href="#" class="footer__link">Devenir partenaire</a></li>
+      <li class="footer__item"><a href="#" class="footer__link"><i class="fas fa-utensils"></i>Proposer un
+          restaurant</a></li>
+      <li class="footer__item"><a href="#" class="footer__link"><i class="fas fa-hands-helping"></i>Devenir
+          partenaire</a></li>
       <li class="footer__item"><a href="#" class="footer__link">Mentions légales</a></li>
       <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
     </ul>

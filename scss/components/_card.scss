@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+
+  box-shadow: 3px 4px 5px 0px rgba($color-black, 0.25);
+  -webkit-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.25);
+  -moz-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.25);
+
+  &__img {
+    height: 75%;
+    width: 100%;
+    object-position: 50% 60%;
+    object-fit: cover;
+  }
+
+  &__new {
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: $color-tertiary;
+  }
+
+  &__info {
+    height: 25%;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    flex-basis: 90%;
+  }
+
+  &__like {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+
+  &__like:hover {
+    fill: $color-primary;
+  }
+}
