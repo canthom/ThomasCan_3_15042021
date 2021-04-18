@@ -44,8 +44,12 @@
     }
   }
 
+  &__explore,
   &__reservation {
-    padding: 4.5rem 3.5rem;
+    padding: 4rem 2rem;
+  }
+
+  &__explore {
     background-color: $color-grey-light;
     text-align: center;
 
@@ -63,11 +67,66 @@
     color: $color-grey-dark;
     margin-bottom: 3rem;
   }
+
+  &__reservation {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      flex-basis: 100%;
+    }
+
+    &-box {
+      background-color: $color-grey-light;
+      padding: 3rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      // MIXIN pour éviter répétition
+      box-shadow: 3px 4px 5px 0px rgba($color-black, 0.15);
+      -webkit-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.15);
+      -moz-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.15);
+      border-radius: 2rem;
+
+      i {
+        color: $color-grey-dark;
+        margin-right: 2rem;
+      }
+
+      div {
+        background-color: $color-primary;
+        color: $color-white;
+        font-size: 1.25rem;
+        font-weight: 400;
+        padding: 0.5rem;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -1.25rem;
+      }
+    }
+
+    &-box:last-of-type {
+      margin-bottom: 0;
+      i {
+        color: $color-primary;
+      }
+    }
+  }
 }
 
 .restoration {
   background-color: $color-grey-light;
-  padding: 5rem 2.5rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
 
