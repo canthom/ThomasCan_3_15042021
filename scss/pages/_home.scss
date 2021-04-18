@@ -2,11 +2,51 @@
 
 // Main Header
 .main-header {
-  background-color: $color-grey-light;
-  padding: 7.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-grey-medium;
+
+    &__input {
+      text-align: center;
+      font-family: inherit;
+      font-size: 1.5rem;
+      color: inherit;
+      background-color: inherit;
+      padding: 1.5rem;
+      border: none;
+      transition: all 0.5s;
+      width: 37.5%;
+
+      &:focus {
+        outline: none;
+        width: 90%;
+      }
+
+      &::-webkit-input-placeholder {
+        color: #333;
+        font-weight: 700;
+      }
+    }
+
+    &__button {
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 
   &__reservation {
-    height: 15rem;
+    padding: 4.5rem 3.5rem;
+    background-color: $color-grey-light;
     text-align: center;
 
     display: flex;
@@ -33,6 +73,10 @@
 
   &__title {
     margin: 2rem 0;
+
+    @include respond(desktop) {
+      flex-basis: 100%;
+    }
   }
 
   &__card {
@@ -41,6 +85,21 @@
 
     &:not(:last-of-type) {
       margin-bottom: 2rem;
+
+      @include respond(desktop) {
+        margin-bottom: 3rem;
+      }
     }
+
+    @include respond(desktop) {
+      width: 47.5%;
+    }
+  }
+
+  @include respond(desktop) {
+    padding: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
