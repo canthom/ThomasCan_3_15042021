@@ -8,12 +8,24 @@ body {
   font-size: 2.75rem;
 }
 
+.heading-1--restaurant {
+  font-family: 'Shrikhand', serif;
+}
+
 .heading-2 {
   font-size: 2.25rem;
 }
 
 .heading-3 {
   font-size: 1.75rem;
+}
+
+.heading-4 {
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: $color-grey-dark;
+  text-transform: uppercase;
+  margin: 2rem 0;
 }
 
 .paragraph {

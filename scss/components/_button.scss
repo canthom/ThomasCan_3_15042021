@@ -62,4 +62,9 @@
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
   }
+
+  &--restaurant {
+    padding: 1.5rem 4.5rem !important;
+    margin: 2rem 0;
+  }
 }
