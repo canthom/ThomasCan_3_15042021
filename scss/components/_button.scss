@@ -4,20 +4,22 @@
 // 2/ Active: moindre translate Y en négatif pour rabaisser le bouton quand il est cliqué
 // 3/ Transition sur le :link
 
+@use '../abstracts/variables';
+
 .btn {
   &:link,
   &:visited {
     background: linear-gradient(
       to right bottom,
-      $color-secondary,
-      $color-primary
+      variables.$color-secondary,
+      variables.$color-primary
     );
-    color: $color-white;
+    color: variables.$color-white;
 
     border: none;
     border-radius: 10rem;
 
-    font-family: $text-font;
+    font-family: variables.$text-font;
     font-size: 1.7rem;
     text-decoration: none;
 
@@ -32,12 +34,12 @@
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+    box-shadow: 0 10px 20px rgba(variables.$color-black, 0.2);
   }
 
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba($color-black, 0.2);
+    box-shadow: 0 5px 10px rgba(variables.$color-black, 0.2);
   }
 
   &::after {
@@ -52,8 +54,7 @@
     z-index: -1;
     background: linear-gradient(
       to right bottom,
-      $color-secondary,
-      $color-primary
+      variables.$color-primary variables.$color-secondary
     );
     transition: all 0.4s;
   }

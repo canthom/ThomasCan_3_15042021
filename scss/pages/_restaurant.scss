@@ -1,5 +1,7 @@
+@use '../abstracts/variables';
+
 .restaurant {
-  background-color: $color-grey-light;
+  background-color: variables.$color-grey-light;
   padding: 4rem 2.25rem;
 
   display: flex;
@@ -20,7 +22,7 @@
   }
 
   &__box {
-    background-color: $color-white;
+    background-color: variables.$color-white;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -30,9 +32,9 @@
     border-radius: 2rem;
 
     // Mixin ?
-    box-shadow: 3px 4px 5px 0px rgba($color-black, 0.1);
-    -webkit-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.1);
-    -moz-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.1);
+    box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
 
     h3 {
       flex-basis: 100%;
@@ -46,6 +48,6 @@
   &__price {
     font-size: 1.4rem;
     font-weight: 700;
-    color: $color-grey-dark;
+    color: variables.$color-grey-dark;
   }
 }

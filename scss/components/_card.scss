@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 .card {
   display: flex;
   flex-direction: column;
@@ -5,9 +7,9 @@
   overflow: hidden;
   border-radius: 2rem;
 
-  box-shadow: 3px 4px 5px 0px rgba($color-black, 0.25);
-  -webkit-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.25);
-  -moz-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.25);
+  box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
 
   &__img {
     height: 72.5%;
@@ -24,7 +26,7 @@
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background-color: $color-tertiary;
+    background-color: variables.$color-tertiary;
   }
 
   &__info {
@@ -45,6 +47,6 @@
   }
 
   &__like:hover {
-    fill: $color-primary;
+    fill: variables.$color-primary;
   }
 }

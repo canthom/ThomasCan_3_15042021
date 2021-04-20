@@ -1,4 +1,6 @@
 // Landing Page
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 // Main Header
 .main-header {
@@ -11,7 +13,7 @@
     justify-content: center;
     align-items: center;
     justify-content: center;
-    background-color: $color-grey-medium;
+    background-color: variables.$color-grey-medium;
 
     &__input {
       text-align: center;
@@ -50,7 +52,7 @@
   }
 
   &__explore {
-    background-color: $color-grey-light;
+    background-color: variables.$color-grey-light;
     text-align: center;
 
     display: flex;
@@ -64,7 +66,7 @@
   }
 
   &__paragraph {
-    color: $color-grey-dark;
+    color: variables.$color-grey-dark;
     margin-bottom: 3rem;
   }
 
@@ -77,7 +79,7 @@
     }
 
     &-box {
-      background-color: $color-grey-light;
+      background-color: variables.$color-grey-light;
       padding: 3rem;
       font-size: 1.6rem;
       font-weight: 700;
@@ -87,20 +89,20 @@
       align-items: center;
       position: relative;
 
-      // MIXIN pour éviter répétition
-      box-shadow: 3px 4px 5px 0px rgba($color-black, 0.15);
-      -webkit-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.15);
-      -moz-box-shadow: 3px 4px 5px 0px rgba($color-black, 0.15);
+      // Variables pour éviter répétition
+      box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.15);
+      -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.15);
+      -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.15);
       border-radius: 2rem;
 
       i {
-        color: $color-grey-dark;
+        color: variables.$color-grey-dark;
         margin-right: 2rem;
       }
 
       div {
-        background-color: $color-primary;
-        color: $color-white;
+        background-color: variables.$color-primary;
+        color: variables.$color-white;
         font-size: 1.25rem;
         font-weight: 400;
         padding: 0.5rem;
@@ -118,14 +120,14 @@
     &-box:last-of-type {
       margin-bottom: 0;
       i {
-        color: $color-primary;
+        color: variables.$color-primary;
       }
     }
   }
 }
 
 .restoration {
-  background-color: $color-grey-light;
+  background-color: variables.$color-grey-light;
   padding: 4rem 2.25rem;
   display: flex;
   flex-direction: column;
@@ -133,7 +135,7 @@
   &__title {
     margin: 2rem 0;
 
-    @include respond(desktop) {
+    @include mixins.respond(desktop) {
       flex-basis: 100%;
     }
   }
@@ -145,17 +147,17 @@
     &:not(:last-of-type) {
       margin-bottom: 2rem;
 
-      @include respond(desktop) {
+      @include mixins.respond(desktop) {
         margin-bottom: 3rem;
       }
     }
 
-    @include respond(desktop) {
+    @include mixins.respond(desktop) {
       width: 47.5%;
     }
   }
 
-  @include respond(desktop) {
+  @include mixins.respond(desktop) {
     padding: 5rem;
     flex-direction: row;
     flex-wrap: wrap;

@@ -1,14 +1,16 @@
+@use '../abstracts/variables';
+
 .footer {
   max-width: 930px;
   margin: 0 auto;
   padding: 2.5rem;
 
   background-color: #444;
-  color: $color-white;
+  color: variables.$color-white;
   font-size: 1.6rem;
 
   &__logo {
-    font-family: $title-font;
+    font-family: variables.$title-font;
     font-size: 2rem;
   }
 

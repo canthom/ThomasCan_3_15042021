@@ -3,25 +3,25 @@
 // Pattern 7 - 1
 
 // Abstracts
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+@use 'abstracts/variables';
 
 // Base
-@import 'base/animations';
-@import 'base/base';
-@import 'base/typography';
-@import 'base/utilities';
+@use 'base/animations';
+@use 'base/base';
+@use 'base/typography';
+@use 'base/utilities';
 
 // Components
-@import 'components/button';
-@import 'components/card';
+@use 'components/button';
+@use 'components/card';
 
 // Layout
-@import 'layout/footer';
-@import 'layout/header';
-@import 'layout/main';
+@use 'layout/footer';
+@use 'layout/header';
+@use 'layout/main';
 
 // Pages
-@import 'pages/home';
-@import 'pages/restaurant';
+@use 'pages/home';
+@use 'pages/restaurant';

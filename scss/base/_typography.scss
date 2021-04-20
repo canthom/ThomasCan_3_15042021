@@ -1,4 +1,6 @@
 // Global
+@use '../abstracts/variables';
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -23,7 +25,7 @@ body {
 .heading-4 {
   font-size: 1.65rem;
   font-weight: 400;
-  color: $color-grey-dark;
+  color: variables.$color-grey-dark;
   text-transform: uppercase;
   margin: 2rem 0;
 }
