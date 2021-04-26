@@ -5,6 +5,7 @@
 // 3/ Transition sur le :link
 
 @use '../abstracts/variables';
+@use '../base/animations';
 
 .btn {
   &:link,
@@ -54,7 +55,8 @@
     z-index: -1;
     background: linear-gradient(
       to right bottom,
-      variables.$color-primary variables.$color-secondary
+      variables.$color-primary,
+      variables.$color-secondary
     );
     transition: all 0.4s;
   }

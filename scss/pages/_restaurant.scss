@@ -4,7 +4,7 @@
   background-color: variables.$color-grey-light;
   margin-top: -5rem;
   z-index: 10;
-  position: absolute;
+  position: relative;
   padding: 4rem 2.25rem;
   border-radius: 4.5rem;
 
@@ -101,6 +101,5 @@
     font-size: 1.4rem;
     font-weight: 700;
     color: variables.$color-grey-dark;
-    overflow: hidden;
   }
 }
