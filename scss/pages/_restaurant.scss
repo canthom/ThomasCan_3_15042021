@@ -2,7 +2,11 @@
 
 .restaurant {
   background-color: variables.$color-grey-light;
+  margin-top: -5rem;
+  z-index: 10;
+  position: absolute;
   padding: 4rem 2.25rem;
+  border-radius: 4.5rem;
 
   display: flex;
   flex-direction: column;
@@ -19,29 +23,77 @@
 
   &__container {
     width: 100%;
+
+    h4::after {
+      content: '';
+      margin-top: 0.5rem;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: variables.$color-tertiary;
+    }
   }
 
   &__box {
-    background-color: variables.$color-white;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    padding: 1.5rem;
+    overflow: hidden;
     margin-bottom: 2rem;
     border-radius: 2rem;
+    display: flex;
+    cursor: pointer;
 
-    // Mixin ?
-    box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
-    -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
-    -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+    &--info {
+      display: none;
+      background-color: variables.$color-white;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 1.5rem;
 
-    h3 {
-      flex-basis: 100%;
+      // Mixin ?
+      box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+      -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+      -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+
+      h3 {
+        flex-basis: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      p {
+        font-size: 1.5rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
     }
 
-    p {
-      font-size: 1.5rem;
+    &--check {
+      visibility: hidden;
+      width: 20%;
+      background-color: variables.$color-tertiary;
+      color: variables.$color-white;
+      transition: all 0.2s;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      display: none;
+    }
+
+    &:hover {
+      div:first-child {
+        width: 85%;
+      }
+
+      div:last-child {
+        visibility: visible;
+        display: flex;
+        width: 15%;
+      }
     }
   }
 
@@ -49,5 +101,6 @@
     font-size: 1.4rem;
     font-weight: 700;
     color: variables.$color-grey-dark;
+    overflow: hidden;
   }
 }

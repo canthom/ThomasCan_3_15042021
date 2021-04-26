@@ -41,12 +41,15 @@
   }
 
   &__like {
-    width: 2.5rem;
-    height: 2.5rem;
+    font-size: 2.75rem;
     cursor: pointer;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    transition: ease 0.2s;
   }
 
   &__like:hover {
-    fill: variables.$color-primary;
+    color: variables.$color-primary;
+    -webkit-text-stroke: 2px transparent;
   }
 }

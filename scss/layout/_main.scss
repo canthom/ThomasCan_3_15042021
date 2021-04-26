@@ -1,4 +1,12 @@
 .main {
   max-width: 930px;
   margin: 0 auto;
+  position: relative;
+
+  &-header {
+    img {
+      height: 27.5rem;
+      object-fit: cover;
+    }
+  }
 }
