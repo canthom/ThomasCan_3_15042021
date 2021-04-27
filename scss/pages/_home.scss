@@ -174,3 +174,19 @@
     justify-content: space-between;
   }
 }
+
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: spin 0.5s linear 3s;
+
+  height: 10rem;
+  width: 10rem;
+  background: linear-gradient(
+    to right bottom,
+    variables.$color-secondary,
+    variables.$color-primary
+  );
+  border-radius: 50%;
+}
