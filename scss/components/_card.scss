@@ -6,10 +6,17 @@
   position: relative;
   overflow: hidden;
   border-radius: 2rem;
+  transition: box-shadow 0.3s;
 
-  box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
-  -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
-  -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
+  box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+
+  &:hover {
+    box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
+  }
 
   &__img {
     height: 72.5%;

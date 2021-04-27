@@ -84,16 +84,21 @@
       font-size: 1.6rem;
       font-weight: 700;
       margin-bottom: 2rem;
-
+      border-radius: 2rem;
+      transition: box-shadow 0.2s;
       display: flex;
       align-items: center;
       position: relative;
 
-      // Variables pour éviter répétition
-      box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.15);
-      -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.15);
-      -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.15);
-      border-radius: 2rem;
+      box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+      -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+      -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
+
+      &:hover {
+        box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
+        -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
+        -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
+      }
 
       i {
         color: variables.$color-grey-dark;

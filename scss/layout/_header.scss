@@ -1,4 +1,5 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 .header {
   height: 7rem;
@@ -20,5 +21,9 @@
   &__logo {
     font-size: 3.25rem;
     font-family: variables.$title-font;
+  }
+
+  @include mixins.respond(desktop) {
+    border-bottom: 1px solid #bbbb;
   }
 }

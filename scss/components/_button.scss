@@ -55,8 +55,8 @@
     z-index: -1;
     background: linear-gradient(
       to right bottom,
-      variables.$color-primary,
-      variables.$color-secondary
+      variables.$color-secondary,
+      variables.$color-primary
     );
     transition: all 0.4s;
   }
