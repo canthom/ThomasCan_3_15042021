@@ -34,7 +34,7 @@
     }
   }
 
-  &__box {
+  &-box {
     // Mixin ?
     box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
     -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.1);
@@ -48,11 +48,8 @@
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
 
-    &--info {
+    &__info {
       background-color: variables.$color-white;
-      // display: flex;
-      // justify-content: space-between;
-      // flex-wrap: wrap;
       width: 100%;
       padding: 1.5rem;
 
@@ -68,11 +65,21 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        display: inline-block;
+      }
+
+      span {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: variables.$color-grey-dark;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
       }
     }
 
-    &--check {
+    &__check {
       visibility: hidden;
       width: 0;
       background-color: variables.$color-tertiary;
@@ -90,14 +97,14 @@
       -webkit-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
       -moz-box-shadow: 3px 4px 5px 0px rgba(variables.$color-black, 0.25);
 
-      div:first-child {
-        width: 100%;
+      & > div:first-child {
+        min-width: 80%;
       }
 
-      div:last-child {
+      & > div:last-child {
         visibility: visible;
         display: flex;
-        width: 15%;
+        width: 20%;
 
         i {
           animation: 0.5s rotate ease;
@@ -105,13 +112,5 @@
         }
       }
     }
-  }
-
-  &__price {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: variables.$color-grey-dark;
-    display: inline-block;
-    margin-left: auto;
   }
 }
