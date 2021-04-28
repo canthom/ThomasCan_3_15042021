@@ -12,10 +12,21 @@
   &__back {
     font-size: 2rem;
     color: variables.$color-grey-dark;
-    display: block;
     margin: auto 0;
     float: left;
     margin-top: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: variables.$color-grey-medium;
+      border-radius: 50%;
+    }
   }
 
   &__logo {
