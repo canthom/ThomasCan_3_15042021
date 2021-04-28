@@ -49,11 +49,10 @@
     animation-fill-mode: backwards;
 
     &--info {
-      display: none;
       background-color: variables.$color-white;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      // display: flex;
+      // justify-content: space-between;
+      // flex-wrap: wrap;
       width: 100%;
       padding: 1.5rem;
 
@@ -69,6 +68,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        display: inline-block;
       }
     }
 
@@ -111,5 +111,7 @@
     font-size: 1.4rem;
     font-weight: 700;
     color: variables.$color-grey-dark;
+    display: inline-block;
+    margin-left: auto;
   }
 }
