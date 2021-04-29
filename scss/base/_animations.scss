@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -22,16 +24,43 @@
 
 @keyframes spin {
   0% {
-    opacity: 1;
+    visibility: visible;
     transform: rotate(0deg);
+    position: fixed;
   }
 
   99% {
-    opacity: 1;
+    visibility: visible;
     transform: rotate(360deg);
+    position: fixed;
   }
 
   100% {
-    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes blur {
+  0% {
+    visibility: visible;
+    filter: blur(0);
+    background-color: rgba(variables.$color-black, 0.75);
+    position: fixed;
+  }
+
+  75% {
+    visibility: visible;
+    background-color: rgba(variables.$color-black, 0.75);
+    position: fixed;
+  }
+
+  99% {
+    visibility: visible;
+    background-color: rgba(variables.$color-black, 0.1);
+    position: fixed;
+  }
+
+  100% {
+    visibility: hidden;
   }
 }

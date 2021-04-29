@@ -174,15 +174,27 @@
     justify-content: space-between;
   }
 }
+.blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  animation: blur 2s linear forwards;
+}
 
 .spin {
   position: absolute;
+  z-index: 100;
   top: 50%;
   left: 50%;
   animation: spin 2s linear forwards;
 
   height: 10rem;
   width: 10rem;
+  margin-top: -5rem;
+  margin-left: -5rem;
   background: linear-gradient(
     to right bottom,
     variables.$color-secondary,
