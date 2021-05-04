@@ -42,6 +42,7 @@
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
+    background-color: variables.$color-white;
   }
 
   &__text {
@@ -51,7 +52,7 @@
   &__like {
     font-size: 2.75rem;
     cursor: pointer;
-    color: white;
+    color: transparent;
     -webkit-text-stroke: 2px black;
     transition: ease 0.2s;
   }
