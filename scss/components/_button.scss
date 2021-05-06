@@ -34,6 +34,11 @@
   }
 
   &:hover {
+    background: linear-gradient(
+      to right bottom,
+      rgba(variables.$color-secondary, 0.85),
+      rgba(variables.$color-primary, 0.85)
+    );
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(variables.$color-black, 0.2);
   }
