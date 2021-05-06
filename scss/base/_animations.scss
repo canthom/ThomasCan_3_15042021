@@ -50,6 +50,7 @@
 
   75% {
     visibility: visible;
+    filter: blur(0);
     background-color: rgba(variables.$color-black, 0.75);
     position: fixed;
   }

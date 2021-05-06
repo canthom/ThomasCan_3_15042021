@@ -43,10 +43,15 @@
     &__button {
       border: none;
       position: absolute;
-      left: 30%;
+      left: 25%;
+      font-size: 1.75rem;
 
       &:focus {
         outline: none;
+      }
+
+      @include mixins.respond(tab-port) {
+        left: 37.5%;
       }
     }
   }
@@ -84,6 +89,7 @@
     }
 
     &-box {
+      margin-left: 1.25rem;
       background-color: variables.$color-grey-light;
       padding: 3rem;
       font-size: 1.6rem;
@@ -129,6 +135,7 @@
 
     &-box:last-of-type {
       margin-bottom: 0;
+      background-color: rgba(variables.$color-primary, 0.15);
       i {
         color: variables.$color-primary;
       }
@@ -174,6 +181,7 @@
     justify-content: space-between;
   }
 }
+
 .blur {
   height: 100%;
   width: 100%;
