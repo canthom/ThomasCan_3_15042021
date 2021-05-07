@@ -65,3 +65,21 @@
     visibility: hidden;
   }
 }
+
+@keyframes heart {
+  0% {
+    color: rgba(variables.$color-primary, 0);
+  }
+
+  1% {
+    color: rgba(variables.$color-primary, 0.1);
+  }
+
+  99% {
+    color: rbga(variables.$color-primary, 0.9);
+  }
+
+  100% {
+    color: rgba(variables.$color-primary, 1);
+  }
+}
