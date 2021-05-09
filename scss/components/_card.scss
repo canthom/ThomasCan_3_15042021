@@ -51,6 +51,7 @@
 
   &__like {
     font-size: 2.75rem;
+    padding: 3px;
     cursor: pointer;
     color: transparent;
     -webkit-text-stroke: 2px variables.$color-black;
@@ -58,7 +59,13 @@
     &:hover {
       -webkit-text-stroke: 2px transparent;
       animation: heart 3s;
-      color: variables.$color-primary;
+      background: linear-gradient(
+        to top right,
+        variables.$color-secondary,
+        variables.$color-primary
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
     }
   }
 }
